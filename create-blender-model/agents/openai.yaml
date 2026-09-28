@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create Blender Model"
+  short_description: "Build editable Blender models from descriptions or images"
+  default_prompt: "Use $create-blender-model to build an editable Blender model from my description or references and validate it with rendered previews."

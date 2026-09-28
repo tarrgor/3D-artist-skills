@@ -5,22 +5,22 @@ sketches, concept art, and multiple views.
 
 ## Included skill
 
-[create-3d-model](create-3d-model/SKILL.md) guides an agent through proportion
+[create-blender-model](create-blender-model/SKILL.md) guides an agent through proportion
 planning, modeling, materials, rendered validation, and delivery of an editable
-asset. It defaults to Blender and adapts to another application when requested.
+Blender asset.
 
 ## Install
 
 With Node.js and npm available, run this in your target project:
 
 ```sh
-npx skills add tarrgor/3D-artist-skills --skill create-3d-model
+npx skills add tarrgor/3D-artist-skills --skill create-blender-model
 ```
 
 To install specifically for Codex:
 
 ```sh
-npx skills add tarrgor/3D-artist-skills --skill create-3d-model --agent codex
+npx skills add tarrgor/3D-artist-skills --skill create-blender-model --agent codex
 ```
 
 Add `--global` to install for your user instead of the current project. Preview
@@ -37,12 +37,12 @@ for other supported agents and installation options.
 
 Installation supplies agent instructions and supporting references. To create
 and render actual models, the agent needs access to Blender (through a working
-integration or local executable), or another suitable modeling application.
+integration or local executable).
 The installer does not install Blender or configure application integrations.
 
 Example request:
 
-> Use create-3d-model to build an editable desk lamp in Blender from these
+> Use create-blender-model to build an editable desk lamp in Blender from these
 > reference images. Deliver the .blend file and rendered previews.
 
 ## Compatibility

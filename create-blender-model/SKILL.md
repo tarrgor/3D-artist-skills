@@ -1,11 +1,11 @@
 ---
-name: create-3d-model
-description: Create or refine editable 3D assets from text descriptions, photographs, sketches, concept art, or multiple views. Use for modeling objects, props, characters, or environment assets with proportion planning and rendered validation; not for image-only depictions of 3D objects.
+name: create-blender-model
+description: Create or refine editable 3D assets in Blender from text descriptions, photographs, sketches, concept art, or multiple views. Use for modeling objects, props, characters, or environment assets with proportion planning and rendered validation; not for image-only depictions of 3D objects.
 ---
 
-# Create 3D Model
+# Create Blender Model
 
-Act as a 3D artist and technical artist. Turn the user's brief into an editable asset. Match silhouette and major proportions before adding detail. Use Blender by default when no application is specified; respect another requested application and adapt this workflow to its capabilities.
+Act as a 3D artist and technical artist. Turn the user's brief into an editable Blender asset. Match silhouette and major proportions before adding detail. This workflow targets Blender. If the user requests a different modeling application, use a workflow suited to that application.
 
 ## 1. Understand the brief before creating geometry
 
@@ -44,7 +44,7 @@ Prefer editable, economical construction. Do not force organic forms into piles 
 
 ## 3. Establish a reproducible working scene
 
-Verify the available application and execution path. For an existing Blender session, perform a read-only scene inspection before editing; registered tools alone do not prove a live connection. If unavailable, use a verified local Blender executable when suitable. If no modeling runtime is available, a script may be supplied as an explicitly unexecuted partial deliverable; do not claim a model was built or validated.
+Verify the available Blender version and execution path. For an existing Blender session, perform a read-only scene inspection before editing; registered tools alone do not prove a live connection. If unavailable, use a verified local Blender executable when suitable. If no Blender runtime is available, a script may be supplied as an explicitly unexecuted partial deliverable; do not claim a model was built or validated.
 
 Preserve source files and unrelated scene contents. Work in a dedicated asset collection or new scene. Rebuild only clearly owned generated content; do not clear the user's entire scene. Separate asset geometry from cameras, lighting, and validation helpers.
 
@@ -52,7 +52,7 @@ For procedural work, deliver a deterministic build script with named parameters,
 
 For sculpted or manually authored assets, the editable native file is authoritative. Preserve useful layers/modifiers and record procedural stages; do not promise scripted reconstruction of unrecorded manual work.
 
-Use APIs supported by the installed application. Consult current official documentation through available documentation tools for version-sensitive syntax or behavior instead of guessing shader sockets or modifier settings.
+Use APIs supported by the installed Blender version. Consult current official documentation through available documentation tools for version-sensitive syntax or behavior instead of guessing shader sockets or modifier settings.
 
 ## 4. Build in passes
 
