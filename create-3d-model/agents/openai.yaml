@@ -1,0 +1,4 @@
+interface:
+  display_name: "Create 3D Model"
+  short_description: "Build editable 3D assets from descriptions or images"
+  default_prompt: "Use $create-3d-model to build an editable 3D asset from my description or references and validate it with rendered previews."
